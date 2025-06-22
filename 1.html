@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DBMS</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #2c3e50;
+      margin: 0;
+      padding: 40px;
+    }
+    header {
+      font-size: 2.8em;
+      font-weight: 600;
+      text-align: center;
+      color: #1a237e;
+      margin-bottom: 50px;
+    }
+    ol {
+      padding-left: 25px;
+    }
+    ol > li {
+      margin-bottom: 50px;
+    }
+    h2 {
+      font-size: 1.8em;
+      color: #0d47a1;
+      border-bottom: 2px solid #cfd8dc;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #37474f;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      color: #455a64;
+    }
+    ul ul {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>DATABASE MANAGEMENT SYSTEM</header>
+
+  <ol>
+    <li>
+      <h2>DATA</h2>
+      <p>Data refers to the raw facts and figures collected from various sources. These could be numbers, text, symbols, or even multimedia files. Data alone does not carry much meaning until it is processed and interpreted in a specific context. For example, a set of numbers like '24, 30, 18' could represent anything from temperatures to ages unless we are told what they refer to. Once organized and given context, data becomes information — something useful for making decisions.</p>
+      <p>Types of data used in databases include:</p>
+      <ul>
+        <li>Numeric Data: Includes integers and floating-point numbers used in mathematical operations.</li>
+        <li>Text or Character Data: Letters, words, or symbols used for storing names, addresses, etc.</li>
+        <li>Date/Time Data: Used for tracking dates, times, and timestamps in records.</li>
+        <li>Boolean Data: Logical values such as TRUE or FALSE, used for conditional operations.</li>
+      </ul>
+    </li>
+
+    <li>
+      <h2>DATABASE</h2>
+      <p>A database is a systematic collection of data that is stored electronically in a structured format. It allows data to be easily accessed, managed, updated, and organized. Instead of using paper or separate files, databases centralize all relevant information and make it available to users and software applications.</p>
+      <p>Common types of databases include:</p>
+      <ul>
+        <li>Relational Databases: Store data in tables with rows and columns. Each table represents an entity, and relationships are established using keys. SQL is the primary language used.</li>
+        <li>NoSQL Databases: Suitable for large-scale data storage. These use document, key-value, graph, or column-family models instead of tables.</li>
+        <li>Hierarchical Databases: Organize data in a tree-like structure, where each record has a single parent and possibly many children.</li>
+        <li>Network Databases: Similar to hierarchical but allows more complex relationships, including many-to-many.</li>
+      </ul>
+    </li>
+
+    <li>
+      <h2>SOFTWARE / SYSTEM (Domain-Specific)</h2>
+      <p>Domain-specific systems are software solutions built to serve particular business or organizational needs. These systems often rely on databases to store, retrieve, and manage data. They simplify daily tasks by automating and organizing information efficiently.</p>
+      <ul>
+        <li>Database Management System (DBMS): The software that allows users to define, manipulate, retrieve, and manage data in databases.</li>
+        <li>Accounting System: Keeps track of financial transactions, budgeting, invoices, tax calculations, and reporting.</li>
+        <li>Attendance System: Monitors employee or student attendance, logs time-in/out, and generates reports on absences or leaves.</li>
+      </ul>
+    </li>
+
+    <li>
+      <h2>SOFTWARE DEVELOPMENT (Database-Focused)</h2>
+      <p>Developing software that uses databases requires thoughtful planning, design, and maintenance. A strong understanding of data relationships and flow is essential for building scalable and secure applications.</p>
+      <ul>
+        <li>Database Design: Involves creating a detailed model of how data is structured and related. This includes defining tables, relationships, keys, and constraints to ensure data integrity.</li>
+        <li>Database Administration: A Database Administrator (DBA) is responsible for installing and configuring DBMS software, setting up user access, maintaining performance, managing backups, and ensuring data security.</li>
+      </ul>
+    </li>
+
+    <li>
+      <h2>TOOLS</h2>
+      <p>To interact with databases effectively, various tools and concepts are used. These range from basic operations like creating tables to advanced features like securing sensitive data or optimizing performance.</p>
+      <ul>
+        <li>Server: A computer system that hosts the database software and services multiple clients or users simultaneously.</li>
+        <li>SQL (Structured Query Language): The standard language used to communicate with and manipulate relational databases.</li>
+        <ul>
+          <li>DDL (Data Definition Language): Commands like CREATE, ALTER, and DROP to define or modify schema.</li>
+          <li>DML (Data Manipulation Language): Commands such as INSERT, UPDATE, and DELETE to manage data.</li>
+          <li>DQL (Data Query Language): Uses the SELECT statement to retrieve data from one or more tables.</li>
+          <li>DCL (Data Control Language): Includes GRANT and REVOKE to control user access to data.</li>
+          <li>SQL Joins: Used to combine rows from two or more tables based on related columns.</li>
+        </ul>
+        <li>CRUD Operations:
+          <ul>
+            <li>Create: Adds new records to the database.</li>
+            <li>Read: Retrieves existing data for viewing or processing.</li>
+            <li>Update: Modifies existing records.</li>
+            <li>Delete: Removes data permanently.</li>
+          </ul>
+        </li>
+        <li>Keys in Database:
+          <ul>
+            <li>Primary Key: Uniquely identifies each record in a table.</li>
+            <li>Foreign Key: A field that links to the primary key of another table, establishing relationships.</li>
+            <li>Composite Key: A combination of two or more columns used to uniquely identify a record.</li>
+          </ul>
+        </li>
+        <li>Constraints: Rules enforced on data columns to maintain accuracy and integrity, such as NOT NULL, UNIQUE, CHECK, and DEFAULT.</li>
+        <li>Anomalies: Problems that arise due to poor database design, such as redundant data (insertion anomaly), lost data (deletion anomaly), and inconsistent data (update anomaly).</li>
+        <li>Normalization: A process of organizing data to reduce redundancy and improve integrity. It involves dividing a database into smaller tables and defining relationships between them. Common forms include 1NF (eliminate repeating groups), 2NF (remove partial dependencies), and 3NF (remove transitive dependencies).</li>
+        <li>Database Security: Measures and techniques to protect data from unauthorized access, manipulation, or loss. This includes access control, encryption, backups, user authentication, and auditing.</li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>
